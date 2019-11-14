@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		9E7CDA18237D998E00BD0F51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA17237D998E00BD0F51 /* AppDelegate.swift */; };
 		9E7CDA1C237D998E00BD0F51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA1B237D998E00BD0F51 /* ViewController.swift */; };
-		9E7CDA1F237D998E00BD0F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CDA1D237D998E00BD0F51 /* Main.storyboard */; };
 		9E7CDA21237D998F00BD0F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CDA20237D998F00BD0F51 /* Assets.xcassets */; };
 		9E7CDA24237D998F00BD0F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CDA22237D998F00BD0F51 /* LaunchScreen.storyboard */; };
+		9E7CDA2F237D9B7700BD0F51 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA2E237D9B7700BD0F51 /* Config.swift */; };
+		9E7CDA31237D9BCA00BD0F51 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA30237D9BCA00BD0F51 /* WeatherService.swift */; };
+		9E7CDA33237D9C3600BD0F51 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA32237D9C3600BD0F51 /* Weather.swift */; };
+		9E7CDA37237DA2F600BD0F51 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA36237DA2F600BD0F51 /* URLBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E7CDA14237D998E00BD0F51 /* ReduxWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7CDA17237D998E00BD0F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7CDA1B237D998E00BD0F51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E7CDA1E237D998E00BD0F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E7CDA20237D998F00BD0F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E7CDA23237D998F00BD0F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E7CDA25237D998F00BD0F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E7CDA2E237D9B7700BD0F51 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		9E7CDA30237D9BCA00BD0F51 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		9E7CDA32237D9C3600BD0F51 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		9E7CDA36237DA2F600BD0F51 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 			children = (
 				9E7CDA2C237D99F200BD0F51 /* Application */,
 				9E7CDA2D237D9A0700BD0F51 /* Screens */,
+				9E7CDA39237DAA8D00BD0F51 /* Model */,
+				9E7CDA38237DAA7900BD0F51 /* Services */,
 				9E7CDA2B237D99DF00BD0F51 /* SupportingFiles */,
 			);
 			path = ReduxWeather;
@@ -64,6 +72,7 @@
 		9E7CDA2B237D99DF00BD0F51 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				9E7CDA2E237D9B7700BD0F51 /* Config.swift */,
 				9E7CDA20237D998F00BD0F51 /* Assets.xcassets */,
 				9E7CDA22237D998F00BD0F51 /* LaunchScreen.storyboard */,
 				9E7CDA25237D998F00BD0F51 /* Info.plist */,
@@ -75,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				9E7CDA17237D998E00BD0F51 /* AppDelegate.swift */,
-				9E7CDA1D237D998E00BD0F51 /* Main.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -86,6 +94,23 @@
 				9E7CDA1B237D998E00BD0F51 /* ViewController.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		9E7CDA38237DAA7900BD0F51 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9E7CDA30237D9BCA00BD0F51 /* WeatherService.swift */,
+				9E7CDA36237DA2F600BD0F51 /* URLBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E7CDA39237DAA8D00BD0F51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E7CDA32237D9C3600BD0F51 /* Weather.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +173,6 @@
 			files = (
 				9E7CDA24237D998F00BD0F51 /* LaunchScreen.storyboard in Resources */,
 				9E7CDA21237D998F00BD0F51 /* Assets.xcassets in Resources */,
-				9E7CDA1F237D998E00BD0F51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,22 +183,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7CDA31237D9BCA00BD0F51 /* WeatherService.swift in Sources */,
 				9E7CDA1C237D998E00BD0F51 /* ViewController.swift in Sources */,
 				9E7CDA18237D998E00BD0F51 /* AppDelegate.swift in Sources */,
+				9E7CDA2F237D9B7700BD0F51 /* Config.swift in Sources */,
+				9E7CDA33237D9C3600BD0F51 /* Weather.swift in Sources */,
+				9E7CDA37237DA2F600BD0F51 /* URLBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9E7CDA1D237D998E00BD0F51 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E7CDA1E237D998E00BD0F51 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9E7CDA22237D998F00BD0F51 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
