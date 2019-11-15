@@ -91,7 +91,7 @@
 		9E7CDA2D237D9A0700BD0F51 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				9E7CDA1B237D998E00BD0F51 /* ViewController.swift */,
+				9E7CDA1B237D998E00BD0F51 /* WeatherViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7CDA31237D9BCA00BD0F51 /* WeatherService.swift in Sources */,
-				9E7CDA1C237D998E00BD0F51 /* ViewController.swift in Sources */,
+				9E7CDA1C237D998E00BD0F51 /* WeatherViewController.swift in Sources */,
 				9E7CDA18237D998E00BD0F51 /* AppDelegate.swift in Sources */,
 				9E7CDA2F237D9B7700BD0F51 /* Config.swift in Sources */,
 				9E7CDA33237D9C3600BD0F51 /* Weather.swift in Sources */,
