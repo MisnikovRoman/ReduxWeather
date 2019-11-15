@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E78B236237EF05200D412BA /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E78B235237EF05200D412BA /* WeatherStore.swift */; };
 		9E7CDA18237D998E00BD0F51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA17237D998E00BD0F51 /* AppDelegate.swift */; };
-		9E7CDA1C237D998E00BD0F51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA1B237D998E00BD0F51 /* ViewController.swift */; };
+		9E7CDA1C237D998E00BD0F51 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA1B237D998E00BD0F51 /* WeatherViewController.swift */; };
 		9E7CDA21237D998F00BD0F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CDA20237D998F00BD0F51 /* Assets.xcassets */; };
 		9E7CDA24237D998F00BD0F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7CDA22237D998F00BD0F51 /* LaunchScreen.storyboard */; };
 		9E7CDA2F237D9B7700BD0F51 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CDA2E237D9B7700BD0F51 /* Config.swift */; };
@@ -18,9 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E78B235237EF05200D412BA /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
 		9E7CDA14237D998E00BD0F51 /* ReduxWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7CDA17237D998E00BD0F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E7CDA1B237D998E00BD0F51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E7CDA1B237D998E00BD0F51 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		9E7CDA20237D998F00BD0F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E7CDA23237D998F00BD0F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E7CDA25237D998F00BD0F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9E7CDA1B237D998E00BD0F51 /* WeatherViewController.swift */,
+				9E78B235237EF05200D412BA /* WeatherStore.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				9E7CDA1C237D998E00BD0F51 /* WeatherViewController.swift in Sources */,
 				9E7CDA18237D998E00BD0F51 /* AppDelegate.swift in Sources */,
 				9E7CDA2F237D9B7700BD0F51 /* Config.swift in Sources */,
+				9E78B236237EF05200D412BA /* WeatherStore.swift in Sources */,
 				9E7CDA33237D9C3600BD0F51 /* Weather.swift in Sources */,
 				9E7CDA37237DA2F600BD0F51 /* URLBuilder.swift in Sources */,
 			);
