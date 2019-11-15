@@ -10,6 +10,9 @@ import UIKit
 
 class WeatherViewController: UIViewController {
 	private let weatherService = WeatherService()
+	private let store = WeatherStore(state: WeatherState(temperature: 19.9)) { _, _ in
+		return WeatherState(temperature: 12.11)
+	}
 
 	private let temperatureLabel: UILabel = {
 		let lbl = UILabel()
@@ -23,6 +26,8 @@ class WeatherViewController: UIViewController {
 		super.viewDidLoad()
 
 		self.setup()
+		self.store.subcribe(self)
+		self.store.dispatch(.update)
 
 		self.weatherService.currentWeather(forCity: "London") { result in
 			switch result {
@@ -30,6 +35,12 @@ class WeatherViewController: UIViewController {
 			case .failure(let error): print(error)
 			}
 		}
+	}
+}
+
+extension WeatherViewController: StoreSubscriber {
+	func newState(_ state: WeatherState) {
+		self.temperatureLabel.text = "\(state.temperature)"
 	}
 }
 
