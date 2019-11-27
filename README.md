@@ -5,3 +5,6 @@
 - https://reswift.github.io/ReSwift/master/about-reswift.html - Документация ReSwift
 - https://habr.com/ru/post/349714/ - Пример memory game
 - https://github.com/armin/Redux-iOS - Пример использования паттера Redux
+
+### SwiftUI
+https://habr.com/ru/post/476398/ - Пример использования в SwiftUI
